@@ -1,0 +1,13 @@
+{
+    "compilerOptions": {
+        "target": "ES6",
+        "experimentalDecorators": true
+    },
+    "include": [
+        "src"
+    ],
+    "exclude": [
+        "node",
+        "webpack"
+    ]
+}

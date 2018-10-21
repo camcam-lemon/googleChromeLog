@@ -1,0 +1,52 @@
+{
+  "name": "test",
+  "version": "1.0.0",
+  "description": "Google Chrome Log",
+  "main": "index.html",
+  "scripts": {
+    "server": "webpack-dev-server --mode development --inline --history-api-fallback --no-info --open",
+    "express": "node tools/server.js",
+    "express:dev": "node-dev tools/server.js",
+    "start": "npm-run-all -p  express server",
+    "start:dev": "npm-run-all -p express:dev server"
+  },
+  "author": "camcam-lemon",
+  "license": "ISC",
+  "dependencies": {
+    "@material-ui/core": "^3.2.2",
+    "@material-ui/icons": "^3.0.1",
+    "express": "^4.16.4",
+    "react": "^16.5.2",
+    "react-dom": "^16.5.2",
+    "sqlite3": "^4.0.2",
+    "styled-components": "^4.0.1"
+  },
+  "devDependencies": {
+    "@babel/core": "^7.1.2",
+    "@babel/plugin-proposal-class-properties": "^7.1.0",
+    "@babel/plugin-proposal-object-rest-spread": "^7.0.0",
+    "@babel/preset-env": "^7.1.0",
+    "@babel/preset-react": "^7.0.0",
+    "@babel/register": "^7.0.0",
+    "@types/material-ui": "^0.21.5",
+    "@types/node": "^10.12.0",
+    "@types/react": "^16.4.17",
+    "@types/react-dom": "^16.0.9",
+    "@types/styled-components": "^4.0.1",
+    "node-dev": "^3.1.3",
+    "npm-run-all": "^4.1.3",
+    "prettier": "^1.14.3",
+    "rimraf": "^2.6.2",
+    "ts-loader": "^5.2.2",
+    "ts-node": "^7.0.1",
+    "tslint": "^5.11.0",
+    "tslint-config-prettier": "^1.15.0",
+    "tslint-plugin-prettier": "^2.0.0",
+    "tslint-react": "^3.6.0",
+    "typescript": "^3.1.3",
+    "typescript-styled-plugin": "^0.12.0",
+    "webpack": "^4.20.2",
+    "webpack-cli": "^3.1.2",
+    "webpack-dev-server": "^3.1.9"
+  }
+}

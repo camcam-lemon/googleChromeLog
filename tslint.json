@@ -1,0 +1,21 @@
+{
+  "defaultSeverity": "error",
+  "extends": ["tslint-react", "tslint-config-prettier"],
+  "rulesDirectory": ["tslint-plugin-prettier"],
+  "jsRules": {},
+  "rules": {
+    "object-shorthand-properties-first": false,
+    "variable-name": false,
+    "no-increment-decrement": false,
+    "import-name": false,
+    "indent": [true, "spaces", 4],
+    "max-line-length": [
+      true,
+      {
+        "limit": 120,
+        "ignore-pattern": "^(?=.*store)(?=.*next)(?=.*action)"
+      }
+    ],
+    "jsx-boolean-value": [true, "never"]
+  }
+}
