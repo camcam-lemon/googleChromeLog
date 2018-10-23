@@ -1,6 +1,5 @@
-
 const express = require('express');
-const path = require('path');
+const username = require('username');
 const fs = require('fs');
 const DB = require('./database');
 
@@ -10,7 +9,8 @@ router.get('*', async (req, res) => {
     let status = 200;
     let response = {};
 
-    const file = path.resolve('../../../Library/Application Support/Google/Chrome/Default/History');
+    const user = await username();
+    const file = `/Users/${user}/Library/Application Support/Google/Chrome/Default/History`;
     fs.copyFileSync(file, 'History');
 
     try {
@@ -27,5 +27,3 @@ router.get('*', async (req, res) => {
 });
 
 module.exports = router;
-
-

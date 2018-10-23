@@ -14,7 +14,7 @@ const CHROME_PATHS = [
 ];
 
 const INVALID_QUERY =
-    'title != "GoogleChromeLog" ' +
+    'url NOT LIKE "%localhost%" ' +
     'AND ' +
     'title != "" ' +
     'AND ' +
